@@ -82,14 +82,36 @@ table{
 
     width:100%;
     margin-top:30px;
-    text-align: center;
+    text-align: right;
 }
 
 th{
     background: rgba(55, 53, 43, 0.762);
     color:white;
+    border:2px solid #c7ae9010;
+    padding: 10px;
 }
-#middlerow{
-    background: #c7ae901b;
-    border-top:dotted;    
+
+td{
+    border:1px solid #bdb09f30;
+    padding:10px;
+}
+#middlerow td{
+    background: #ded2c361;
+    border-top:1px black dashed;
+    border-bottom:1px black dashed;       
+}
+.region{
+    text-align: left;
+}
+footer{
+    border-top: 2px #ded2c361 solid;
+    padding :2px;
+    margin-top:50px;
+    font-family: Arial;
+
+}
+footer p{
+    text-align:center;
+    font-size:13px;
 }
