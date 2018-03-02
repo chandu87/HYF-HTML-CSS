@@ -1,9 +1,11 @@
+/* Styling for whole body*/
 body{
     margin: 80px 250px 10px 250px;
     font-family: 'Times New Roman';
     color:  #594b3a;
 
 }
+/* Styling for Page heading */
 #pagetitle{
     text-align: center;
     border-top: solid 1px #594b3a;
@@ -15,6 +17,7 @@ h1{
     font-family: 'Times New Roman', Times, serif;
     letter-spacing: 5px;
 }
+/* Styling for all H4 Which are used as headings */
 h4{
     text-align: center;
     font-family: Arial;
@@ -24,13 +27,7 @@ h4{
     margin:0px;
 
 }
-nav {
-    line-height: 40px;
-    padding-top:20px;
-}
-nav a{
-    color:#43948e;
-}
+
 h4 a{
     text-decoration: none;
     color:#43948e;
@@ -38,6 +35,17 @@ h4 a{
     vertical-align: 3px;
 
 }
+
+/* Navigation styling*/
+nav {
+    line-height: 40px;
+    padding-top:20px;
+}
+nav a{
+    color:#43948e;
+}
+
+/* Styling for content of each section in the article*/
 p{
 
     text-align:justify;
@@ -56,6 +64,7 @@ section{
     font-family: Arial;
     overflow: auto;
 }
+/* Stling for blockquote */
 blockquote{
     background: #c7ae901b;
     height:100px;
@@ -71,6 +80,7 @@ blockquote{
 #quoteauthor{
     float: right;
 }
+/* Styling for image in section  ART THAT I LIKE */
 #image{
     float:left; 
     width:50%;
@@ -78,6 +88,8 @@ blockquote{
     margin-top:10px;
 
 }
+
+/* Table Styling Start */
 table{
 
     width:100%;
@@ -104,6 +116,9 @@ td{
 .region{
     text-align: left;
 }
+/* Table Styling Ends */
+
+/* Footer styling*/
 footer{
     border-top: 2px #ded2c361 solid;
     padding :2px;
@@ -115,3 +130,4 @@ footer p{
     text-align:center;
     font-size:13px;
 }
+/* Footer styling ends */
