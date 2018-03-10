@@ -1,14 +1,15 @@
+/* Styling for whole body */
 *{
     box-sizing: border-box;
     margin:0px;
-    font-family: Arial;
-    
+    font-family: Arial;  
 }
+
 .container{
     margin-left:13%;
     margin-right:10%;
-    
 }
+/* Header styling*/
 header{
     background: rgba(242, 242, 242, 0.591);
     padding:3.5%;
@@ -21,7 +22,7 @@ header h1{
 header p{
     padding-top:1%;
 }
-
+/* Navigation styling */
 nav ul{
     list-style: none;
     text-align: center;
@@ -47,41 +48,41 @@ nav li a:hover{
 .about a{
     color:#818181;
 }
-footer{
-    background: rgba(39, 28, 138, 0.851);
-}
+
+/* Main display image */
 img{
     width:100%;
     height:600px;
 }
+/* Conent holder styling*/
 aside{
     width:40%;
     padding-right:10%;
     padding-top:5%;
-    text-align: justify;
+
 }
-main{
+main,#gallery-container{
     width:60%;
     padding-top:5%;
     padding-right:5%;
     font-size: 1.2em;
-    text-align: justify;
-
 }
-main h2{
+main h2,#gallery-container h2{
     padding-bottom:2%;
 }
-aside,main{
+aside,main,#gallery-container{
     float:left;
 }
-
-aside h3{padding-bottom: 7%;}
+aside h3{
+    padding-bottom: 7%;
+}
 p{
     color: #818181;
 }
 h2{
     color:#000;
 }
+/* Gallery icons styling*/
 #gallery{
     padding-bottom:10%;
 }
@@ -90,6 +91,26 @@ h2{
     height:10%;
     padding:5%;
 }
+/* Footer styling*/
+footer{
+    background: rgba(39, 28, 138, 0.851);
+    display:flex;
+    flex-wrap: wrap;
+    clear:both;
+    height:100%;
+    padding-left:10%;
+    padding-right:5%;
+    font-size:1.2em;
+
+}
+footer h3{
+    padding-bottom:8%;
+}
+footer a{
+    text-decoration: none;
+    color:white;
+}
+/* Footer sections styling*/
 section{
     width:25%;
     color:white;
@@ -102,26 +123,44 @@ section{
 section p{
     color:white;
 }
-footer{
-    display:flex;
-    flex-wrap: wrap;
-    clear:both;
-    height:100%;
-    padding-left:10%;
-    padding-right:5%;
-    font-size:1.2em;
-}
-footer h3{
-    padding-bottom:8%;
-}
+
 hr{
     border-color:rgba(242, 242, 242, 0.303);
 }
-footer a{
-    text-decoration: none;
-    color:white;
-}
+/* google maps api styling*/
 #map {
     height: 200px;
     width: 100%;
    }
+
+   /* Media quiries for mmobile phone displays*/
+   @media screen and (max-width:640px){
+       aside,main,#gallery-container{
+           width:100%;
+       }
+       h2{
+           font-size:1em;
+       }
+       #gallery img{
+           width:48%;
+       }
+       section{
+           width:100%;
+       }
+       nav{
+           width:0%;
+       }
+       nav li{
+           width:100%;
+       }
+        header{
+            text-align: center;
+
+        }   
+}
+/* Media queries for desktops */
+@media screen and (min-width:650px){
+aside,main,#gallery-container{
+    text-align: justify;
+}
+}
