@@ -82,7 +82,9 @@ p{
 h2{
     color:#000;
 }
-
+#gallery{
+    padding-bottom:10%;
+}
 #gallery img{
     width:24%;
     height:10%;
@@ -110,7 +112,7 @@ footer{
     font-size:1.2em;
 }
 footer h3{
-    padding-bottom:5%;
+    padding-bottom:8%;
 }
 hr{
     border-color:rgba(242, 242, 242, 0.303);
@@ -119,3 +121,7 @@ footer a{
     text-decoration: none;
     color:white;
 }
+#map {
+    height: 200px;
+    width: 100%;
+   }

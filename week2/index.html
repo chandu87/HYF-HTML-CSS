@@ -65,6 +65,7 @@
         <footer>
                 <section>
                     <h3>FIND US</h3>
+                    <div id="map"></div>
                     <p>Hack Your Future <br> Copenhagen <br> M-Th: 7am - 4pm<br>Fri-Sat:9am - 8pm</p>
                 </section>
                 <section>
@@ -98,5 +99,21 @@
            
         <!--Footer ends-->
     </div>
+    <script>
+      function initMap() {
+        var uluru = {lat: 55.661869, lng: 12.540986};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 12,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCz1DRLCI2-CR6lTq0YWN1ETYfbqzC130c&callback=initMap">
+    </script>
     </body>
 </html>
